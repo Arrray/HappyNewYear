@@ -1,0 +1,131 @@
+/* all tag */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.5625vw;
+    font-family: "Microsoft Sans Serif";
+}
+
+html,body {
+    height: 100%;
+}
+
+
+/* music */
+#music {
+    position: fixed;
+    top: 3vh;
+    right: 4vw;
+    z-index: 5;
+    width: 15vw;
+    height: 15vw;
+    border: 4px solid #ef1639;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+#music > img:first-of-type {
+    position: absolute;
+    top: 24%;
+    right: 2.5%;
+    width: 28.421%;
+}
+
+#music >img:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 79%;
+}
+
+/*page bg*/
+.page {
+    height: 100%;
+}
+
+.page > .bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/*page 1*/
+
+#page1 > .bg {
+    background: url("../img/p1_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page1 > .p1_lantern {
+    position: absolute;
+    top: -3.4%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: url("../img/p1_lantern.png") no-repeat center bottom;
+    background-size: 100%;
+
+    width: 45vw;
+    height: 71.2vh;
+    font-size: 3.506rem;
+    padding-top: 31vh;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#page1 > .p1_lantern:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    margin: auto;
+    width: 30vw;
+    height: 30vw;
+    background: #d60b3b;
+    opacity: 0.5;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10vw 10vw #d60b3b;
+       -moz-box-shadow: 0 0 10vw 10vw #d60b3b;
+        -ms-box-shadow: 0 0 10vw 10vw #d60b3b;
+         -o-box-shadow: 0 0 10vw 10vw #d60b3b;
+            box-shadow: 0 0 10vw 10vw #d60b3b;
+}
+#page1 > .p1_imooc {
+    position: absolute;
+    right: 0;
+    bottom: 9vh;
+    left: 0;
+    margin: auto;
+    background: url("../img/p1_imooc.png") no-repeat center center;
+    background-size: 100%;
+    width: 27.656vw;
+    height: 18.63vh;
+}
+#page1 > .p1_woeds {
+    font-size: 2.134rem;
+    right: 0;
+    bottom: 48px;
+    left: 0;
+    text-align: center;
+    color: #231815;
+}
+    /*page 2*/
+#page2 > .bg {
+    background: url("../img/p2_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+/*page 3*/
+#page3 > .bg {
+    background: url("../img/p3_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
