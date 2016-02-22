@@ -30,6 +30,7 @@ html,body {
     top: 24%;
     right: 2.5%;
     width: 28.421%;
+    z-index: 1;
 }
 
 #music >img:last-of-type {
@@ -40,8 +41,43 @@ html,body {
     left: 0;
     margin: auto;
     width: 79%;
+    z-index: 0;
 }
 
+/*music特效*/
+#music > img.play {
+    -webkit-animation: music_disc 4s linear infinite;
+         -o-animation: music_disc 4s linear infinite;
+            animation: music_disc 4s linear infinite;
+}
+@-webkit-keyframes music_disc {
+    0% {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+               transform: rotate(360deg);
+    }
+}
+@keyframes music_disc {
+    0% {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
 /*page bg*/
 .page {
     position: absolute;
@@ -103,6 +139,21 @@ html,body {
         -ms-box-shadow: 0 0 10vw 10vw #d60b3b;
          -o-box-shadow: 0 0 10vw 10vw #d60b3b;
             box-shadow: 0 0 10vw 10vw #d60b3b;
+    -webkit-animation: p1_lantern .5s infinite alternate;
+         -o-animation: p1_lantern .5s infinite alternate;
+            animation: p1_lantern .5s infinite alternate;
+}
+@-webkit-keyframes p1_lantern {
+    0% { opacity: .5;
+        -webkit-transform: scale(.8, .8);
+
+    }
+}
+@keyframes p1_lantern {
+    0% { opacity: .5;
+        -webkit-transform: scale(.8, .8);
+
+    }
 }
 #page1 > .p1_imooc {
     position: absolute;
@@ -143,6 +194,37 @@ html,body {
     background-size: 100%;
     width: 59.375vw;
     height: 59.375vw;
+    -webkit-animation: p2_circle_outer 1s linear 3s infinite;
+    -o-animation: p2_circle_outer 1s linear 3s infinite ;
+    animation: p2_circle_outer 1s linear 3s infinite ;
+}
+@-webkit-keyframes p2_circle_outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes p2_circle_outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-1080deg);
+        transform: rotate(-360deg);
+    }
 }
 #page2 >.p2_circle:before {
     position: absolute;
@@ -157,7 +239,39 @@ html,body {
     background-size: 100%;
     width: 45.625vw;
     height: 45.625vw;
+    -webkit-animation: p2_circle_middle 1s linear 2s infinite;
+    -o-animation: p2_circle_middle 1s linear 2s infinite ;
+    animation: p2_circle_middle 1s linear 2s infinite ;
 }
+@-webkit-keyframes p2_circle_middle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+}
+@keyframes p2_circle_middle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+}
+
 #page2 >.p2_circle:after {
     position: absolute;
     top: 0;
@@ -171,6 +285,37 @@ html,body {
     background-size: 100%;
     width: 39.9375vw;
     height: 39.9375vw;
+    -webkit-animation: p2_circle_inner 1s linear 1s infinite;
+         -o-animation: p2_circle_inner 1s linear 1s infinite ;
+            animation: p2_circle_inner 1s linear 1s infinite ;
+}
+@-webkit-keyframes p2_circle_inner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-1080deg);
+        -ms-transform: rotate(-1080deg);
+        -o-transform: rotate(-1080deg);
+        transform: rotate(-1080deg);
+    }
+}
+@keyframes p2_circle_inner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-1080deg);
+        -ms-transform: rotate(-1080deg);
+        -o-transform: rotate(-1080deg);
+        transform: rotate(-1080deg);
+    }
 }
 #page2 >.p2_2016 {
     position: absolute;
@@ -243,4 +388,35 @@ html,body {
     border-radius: 50%;
     background: url("../img/p3_blessing.png") no-repeat center center;
     background-size: 100%;
+    -webkit-animation: p3_blessing 2s linear infinite;
+    -o-animation: p3_blessing 2s linear infinite;
+    animation: p3_blessing 2s linear infinite;
+}
+@-webkit-keyframes p3_blessing {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes p3_blessing {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(36deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
