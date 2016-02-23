@@ -9,6 +9,7 @@
 
 html,body {
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -94,7 +95,7 @@ html,body {
 
 /*page 1*/
 #page1 {
-    display: none;
+    display: block;
 }
 #page1 > .bg {
     background: url("../img/p1_bg.jpg") no-repeat center center;
@@ -114,6 +115,7 @@ html,body {
     font-size: 3.506rem;
     padding-top: 31vh;
     text-align: center;
+    color: #ffffff;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
@@ -166,7 +168,7 @@ html,body {
     width: 27.656vw;
     height: 18.63vh;
 }
-#page1 > .p1_woeds {
+#page1 > .p1_words {
     font-size: 2.134rem;
     right: 0;
     bottom: 48px;
@@ -177,6 +179,27 @@ html,body {
     /*page 2*/
 #page2 {
     display: none;
+    -webkit-transition: .5s;
+            transition: .5s;
+}
+#page2.fadeOut {opacity: .3;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+
+}
+#page2 > .p2_bg_loading {
+    z-index: 4;
+    background: #ef1639;
+    -webkit-animation: p2_bg-loading 1s linear forwards;
+            animation: p2_bg-loading 1s linear forwards;
+}
+@-webkit-keyframes p2_bg_loading {
+    0%  {opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes p2_bg_loading {
+    0%  {opacity: 1;}
+    100%{opacity: 0;}
 }
 #page2 > .bg {
     background: url("../img/p2_bg.jpg") no-repeat center center;
@@ -331,7 +354,14 @@ html,body {
 }
 /*page 3*/
 #page3 {
-    display: block;
+    display: none;
+    -webkit-transition: .5s;
+            transition: .5s;
+}
+#page3.fadeIn {opacity: .3;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+
 }
 #page3 > .bg {
     background: url("../img/p3_bg.jpg") no-repeat center center;
