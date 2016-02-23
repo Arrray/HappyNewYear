@@ -13,7 +13,7 @@ html,body {
 
 
 /* music */
-#music {
+.music {
     position: fixed;
     top: 3vh;
     right: 4vw;
@@ -25,7 +25,7 @@ html,body {
     background: #ffffff;
 }
 
-#music > img:first-of-type {
+.music > img:first-of-type {
     position: absolute;
     top: 24%;
     right: 2.5%;
@@ -33,7 +33,7 @@ html,body {
     z-index: 1;
 }
 
-#music >img:last-of-type {
+.music >img:last-of-type {
     position: absolute;
     top: 0;
     right: 0;
@@ -45,7 +45,7 @@ html,body {
 }
 
 /*music特效*/
-#music > img.play {
+.music > img.play {
     -webkit-animation: music_disc 4s linear infinite;
          -o-animation: music_disc 4s linear infinite;
             animation: music_disc 4s linear infinite;
