@@ -40,7 +40,7 @@ window.onload = function(){
                     //this.style.webkitAnimationPlayState = "running";
                 }else{
                     audio.pause();
-                    this.setAttribute("class","");
+                    this.setAttribute("class"," ");
                     //this.style.animationPlayState = "paused";
                     //this.style.webkitAnimationPlayState = "paused";
                 }
