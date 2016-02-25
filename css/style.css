@@ -359,7 +359,7 @@ html,body {
     -webkit-transition: .5s;
             transition: .5s;
 }
-#page3 .fadeIn {
+#page3.fadeIn {
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
 
